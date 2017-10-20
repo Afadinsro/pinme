@@ -16,9 +16,18 @@ main
 }
 
 #navbar{
-    height: 5%;
+    position: absolute;
 }
 
 #map{
-   height:100%; 
+   height: 100%; 
+   padding-top: 15%;
+   position: relative;
+}
+
+#pinme-btn{
+    position: absolute;
+    z-index: 100;
+    right: 41vw;
+    bottom: 30px;
 }
