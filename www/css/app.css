@@ -28,6 +28,8 @@ main
 #pinme-btn{
     position: absolute;
     z-index: 100;
-    right: 41vw;
+    right: 42vw;
+    width: 16vw;
+    height: 16vw;
     bottom: 30px;
 }
