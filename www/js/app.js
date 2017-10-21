@@ -22,9 +22,14 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.open(map);
 }
 
+/**
+ * Pins the location of the user with a red marker on the map
+ *
+ */
 function pinMe(){
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
+        //Get the current position of the user
         navigator.geolocation.getCurrentPosition(function(position) {
     var pos = {
         lat: position.coords.latitude,
@@ -41,7 +46,7 @@ function pinMe(){
             map: map,
             title: ''
         });
-        
+        //center the 
         map.setCenter(pos);
         
     });
