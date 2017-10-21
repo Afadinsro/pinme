@@ -14,14 +14,13 @@ main
 {
     height: 100%;
 }
-
+/*
 #navbar{
     position: absolute;
-}
+}*/
 
 #map{
-   height: 100%; 
-   padding-top: 15%;
+   height: 90%; 
    position: relative;
 }
 
@@ -38,3 +37,9 @@ main
     height: 90%;
     top: 5%;
 }
+
+#pinme-btn-logo{
+    height: 60%;
+    top: 20%;
+}
+
