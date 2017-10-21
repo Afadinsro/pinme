@@ -51,7 +51,7 @@ function pinMe(){
         map.setCenter(pos);
         map.setZoom(18);
         
-    });
+    }, handleLocationError(true, infoWindow, map.getCenter()););
     } else {
         // Browser doesn't support Geolocation
         handleLocationError(false, infoWindow, map.getCenter());
