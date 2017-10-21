@@ -4,6 +4,7 @@
  */
 
 var map, infoWindow;
+//initialize the map
 function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 5.582830, lng: -0.307473},
@@ -35,18 +36,13 @@ function pinMe(){
         lat: position.coords.latitude,
         lng: position.coords.longitude
     };
-
-        /*infoWindow.setPosition(pos);
-        infoWindow.setContent('Location found.');
-        infoWindow.open(map);
-        map.setCenter(pos);*/
         
         var marker = new google.maps.Marker({
             position: pos,
             map: map,
             title: 'Me'
         });
-        //center the 
+        //center the map to the marked location
         map.setCenter(pos);
         
     });
