@@ -7,7 +7,7 @@ var map, infoWindow;
 function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 5.582830, lng: -0.307473},
-        zoom: 10
+        zoom: 12
     });
     infoWindow = new google.maps.InfoWindow;
 
@@ -44,7 +44,7 @@ function pinMe(){
         var marker = new google.maps.Marker({
             position: pos,
             map: map,
-            title: ''
+            title: 'You'
         });
         //center the 
         map.setCenter(pos);
